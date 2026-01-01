@@ -333,7 +333,7 @@ TArrayTilesInline16 MazeGraph::GeneratePathBetweenTwoTilesNotGoingThroughSpecifi
 
 			const auto currentConnectedNodeNumber = connectedNodes.connectedNodes[i];
 
-			if (currentNodeNumber != nodeNumberTileToAvoid && false == VertexVisitedBefore(currentConnectedNodeNumber)) {
+			if (currentConnectedNodeNumber != nodeNumberTileToAvoid && false == VertexVisitedBefore(currentConnectedNodeNumber)) {
 				_queue.Enqueue(currentConnectedNodeNumber);
 				_tree.Add(TraversedNode{ currentConnectedNodeNumber, currentParentIndex });
 				MarkVertexAsVisited(currentConnectedNodeNumber);
