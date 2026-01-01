@@ -19,8 +19,8 @@
 * to be constructed is connected.
 * 
 * Vertices and all its edges can be added at once only for now.
-* This will change in the futrue where I will try any
-* number of adjacent edges to the graph.
+* This will change in the futrue where I will try adding and removing any
+* number of adjacent edges to and from the graph.
 *
 *It is not thread safe.
 */
