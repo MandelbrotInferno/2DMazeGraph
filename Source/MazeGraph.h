@@ -16,14 +16,16 @@
 * 
 * It assumes that ONLY walkable tiles will 
 * be used as the vertices and that the graph 
-* to be constructed is connected.
+* to be constructed is undirected connected one 
+* where each tile has the same cost.
 * 
 * Vertices and all its edges can be added at once only for now.
-* This will change in the futrue where I will try adding and removing any
-* number of adjacent edges to and from the graph.
-*
+* This will change in the futrue where I will try adding any
+* number of adjacent edges to the graph.
+* 
 *It is not thread safe.
 */
+
 class PACMANUE_API MazeGraph final
 {
 private:
